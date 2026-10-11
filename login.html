@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+    <h1>Computer Science</h1>
+    <h3>Department Login Portal</h3>
+
+    <form id="loginForm">
+
+        <label>Login As</label>
+        <select id="userType">
+            <option value="">-- Select User --</option>
+            <option value="Student">Student</option>
+            <option value="Mentor">Mentor</option>        
+            <option value="HOD">HOD</option>
+        </select>
+
+        <label>ID</label>
+        <input type="text" id="userId" placeholder="Enter ID">
+
+        <label>Name</label>
+        <input type="text" id="userName" placeholder="Enter Name">
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

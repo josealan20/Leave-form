@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOD Approval</title>
+<link rel="stylesheet" href="hod.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Computer Science Department</h1>
+<h2>HOD Leave Approval</h2>
+
+<div id="leaveSection">
+
+<table>
+
+<tr>
+<th>Field</th>
+<th>Details</th>
+</tr>
+
+<tr><td>Student ID</td><td id="sid"></td></tr>
+<tr><td>Student Name</td><td id="sname"></td></tr>
+<tr><td>Year</td><td id="year"></td></tr>
+<tr><td>Section</td><td id="section"></td></tr>
+<tr><td>Leave From</td><td id="from"></td></tr>
+<tr><td>Leave To</td><td id="to"></td></tr>
+<tr><td>Total Days</td><td id="days"></td></tr>
+<tr><td>Reason</td><td id="reason"></td></tr>
+
+</table>
+
+<div class="buttons">
+<button class="approve" onclick="approve()">Approve</button>
+<button class="reject" onclick="reject()">Reject</button>
+</div>
+
+</div>
+
+<h3 id="message"></h3>
+
+</div>
+
+<script src="hod.js"></script>
+
+</body>
+</html>

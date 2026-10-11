@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Leave Form</title>
+<link rel="stylesheet" href="stc.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Computer Science Department</h1>
+    <h2>Student Leave Application Form</h2>
+
+    <form id="leaveForm">
+
+        <label>Student ID</label>
+        <input type="text" id="studentId" placeholder="Enter Student ID" required>
+
+        <label>Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter Student Name" required>
+
+        <label>Year</label>
+        <select id="year" required>
+            <option value="">Select Year</option>
+            <option>I Year</option>
+            <option>II Year</option>
+            <option>III Year</option>
+            
+        </select>
+
+        <label>Section</label>
+        <select id="section" required>
+            <option value="">Select Section</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+
+        <label>Mentor Name</label>
+        <input type="text" id="mentorName" placeholder="Enter Mentor Name" required>
+
+        <label>Leave From</label>
+        <input type="date" id="fromDate" required>
+
+        <label>Leave To</label>
+        <input type="date" id="toDate" required>
+
+        <label>Total Leave Days</label>
+        <input type="text" id="days" readonly>
+
+        <label>Reason for Leave</label>
+        <textarea id="reason" rows="4" placeholder="Enter reason" required></textarea>
+
+        <label>Parent Contact Number</label>
+        <input type="tel" id="parentPhone" placeholder="Enter Parent Mobile Number" required>
+
+        <h3>Approval Status</h3>
+
+        <label>Mentor Approval</label>
+        <input type="text" value="Pending" readonly>
+
+        <label>HOD Approval</label>
+        <input type="text" value="Pending" readonly>
+
+        <button type="submit">Submit Leave Application</button>
+
+    </form>
+
+</div>
+
+<script src="stu.js"></script>
+
+</body>
+</html>
